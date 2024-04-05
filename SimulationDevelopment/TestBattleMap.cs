@@ -35,7 +35,6 @@ namespace SimulationDevelopment
             listAlllHistory = HistoryDAO.Instance.GetAllHistories();
             LoadDataComboBox();
             listIDNguoiLinh = HistoryDAO.Instance.GetListNguoiLinhWithTranChien(1);
-
         }
 
         // Load dữ liệu commbo box
@@ -47,7 +46,6 @@ namespace SimulationDevelopment
             cbShowRoutes.DataSource = new BindingSource(list, null);
             cbShowRoutes.DisplayMember = "Value";
             cbShowRoutes.ValueMember = "Key";
-
         }
 
         // Khởi tạo map
